@@ -33,7 +33,7 @@ java -jar JFLAP.jar
 ```
 
 ## Archivos cambiados
-El repositorio original se encuentra en:
+El repositorio original se encuentra en este link:
 https://github.com/evandroforks/JFLAP_FormalLanguagesExperimenting
 
 ### gui.Main.java
