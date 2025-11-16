@@ -47,9 +47,13 @@ public static void main(String[] args)
 ```
 
 Para solucionar esto, se creó un método main(String[] args) estándar que:
+
 -Lee los argumentos pasados desde la terminal.
+
 -Detecta si el último argumento es true o false (parámetro dont original).
+
 -Llama internamente al main(String[], boolean) original.
+
 -Esto preserva la funcionalidad de JFLAP y hace que el programa sea ejecutable.
 
 ### mainFile
