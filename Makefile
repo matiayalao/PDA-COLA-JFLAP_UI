@@ -1,7 +1,7 @@
 SOURCEDIRS = automata file grammar gui regular pumping debug
 APACHE = org
 # ¡Corregido! No incluimos ningún .class aquí.
-AUX = DOCS ICON MEDIA Makefile mainFile README LICENSE ChangeLog.txt
+AUX = DOCS ICON MEDIA Makefile mainFile README.md LICENSE ChangeLog.txt
 
 all: source-included ws two-jar
 	rm build
@@ -34,11 +34,9 @@ two-jar: build
 	# Extraemos todos los JARs de xmlgraphics en este mismo directorio
 	find /usr/share/java/xmlgraphics-commons/ -name "*.jar" -exec sh -c 'jar -xf "$0"' {} \;
 
-	# 3. Tu lógica para terminar
 	cd ..
 	jar cf svg.jar -C temp_deps .
 	rm -rf temp_deps
-	# --- FIN DE LA MEJORA ---
 
 build:
 	find . -name "*.java" | xargs javac \
