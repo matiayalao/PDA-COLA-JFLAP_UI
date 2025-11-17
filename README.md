@@ -32,6 +32,10 @@ make
 java -jar JFLAP.jar
 ```
 
+
+### Precuación
+Con ciertos caracteres (como #) puede no funcionar las transiciones hechas, se recomienda usar letras.
+
 ## Archivos cambiados
 El repositorio original se encuentra en este link:
 https://github.com/evandroforks/JFLAP_FormalLanguagesExperimenting
