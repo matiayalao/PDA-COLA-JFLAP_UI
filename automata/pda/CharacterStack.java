@@ -104,11 +104,9 @@ public class CharacterStack implements Serializable {
      *         the stack
      */
     public char pop() {
-        if (buffer.length() == 0) return 0;
         char[] toReturn = new char[1];
         buffer.getChars(0, 1, toReturn, 0);
         buffer.deleteCharAt(0);
-        cachedHash = 0xdeadbeef;
         return toReturn[0];
     }
 
@@ -129,7 +127,6 @@ public class CharacterStack implements Serializable {
         char[] c = new char[number];
         buffer.getChars(0, number, c, 0);
         buffer.delete(0, number);
-        cachedHash = 0xdeadbeef;
         return new String(c);
     }
 
